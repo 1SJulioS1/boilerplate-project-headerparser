@@ -19,7 +19,7 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-app.get("/api/whoami", (req, res) => {
+app.get("/api/whoami/api/whoami", (req, res) => {
   res.json({
     ipaddress: req.socket.remoteAddress,
     language: req.headers["accept-language"],
